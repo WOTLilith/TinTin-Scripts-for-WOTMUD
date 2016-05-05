@@ -1,15 +1,18 @@
-#EVENT {SESSION CONNECTED} 
+#EVENT {SESSION CONNECTED} #NOP type tt++ wot.tin to log in your alt. 
  { 
  #VAR {session[name]} {%0};
  }
 
 
-#SESSION {WOTmud}{game.wotmud.org}{2224}:yourAlt;your password; #NOP 
+#SESSION {WOTmud}{game.wotmud.org}{2224}:yourAlt;your password; #NOP Logs in your alt.                                                             #NOP if that's the case, you can write scripts that logs in your
 
-#CONFIG {REPEAT ENTER} on; #NOP very useful for doors script. 
+#NOP modified verison of orginal script at Necromancer's Wiki. 
+---------------------------------------------------------------------
+#NOP you can load tintin scripts after you log in your alt here. Modify as needed or even delete files below my log in script. 
+#CONFIG {REPEAT ENTER} on; #NOP very useful for doors script. Turn it off when getting items from clan chests 
 #CONFIG {log} plain  $NOP if you don't do this, you get lots of unwanted characters in your log.
 
-#CLASS {DS}{read}{DS.tin}; #NOP General stuff adapted for DS ie fill skin with water...  
-#CLASS {doors}{read}{doors.tin}; #NOP Door scripts
+#CLASS {DS}{read}{DS.tin}; #NOP General stuff adapted for DS ie fill skin corpse alias; fill skin well alias; 
+#CLASS {doors}{read}{doors.tin}; #NOP Door scripts. Includes a trigger for door names, aliases for opening and closing doors. 
 
-#SPLIT; $makes it much easier 
+#SPLIT; #NOP makes it much easier to tpye stuff into your client. 
