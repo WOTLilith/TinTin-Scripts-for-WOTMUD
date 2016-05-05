@@ -4,7 +4,7 @@
  }
 
 
-#SESSION {WOTmud}{game.wotmud.org}{2224}:yourAlt;your password; #NOP Logs in your alt.                                                             #NOP if that's the case, you can write scripts that logs in your
+#SESSION {WOTmud}{game.wotmud.org}{2224}:yourAlt;your password; #NOP Logs in your alt.
 
 #NOP modified verison of orginal script at Necromancer's Wiki. 
 ---------------------------------------------------------------------
