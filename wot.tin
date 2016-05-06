@@ -2,15 +2,13 @@
  { 
  #VAR {session[name]} {%0};
  }
+#NOP I got the login script from Necromancers wike for the 3Kingdom mud.
+#SESSION {WOTmud}{game.wotmud.org}{2224}:youralt;yourpassword;
 
-#action {*%1* calls lightning from the sky to strike you, sizzling your insides!}#sub {*%1* calls lightning from the sky to strike you, sizzling your insides!}{*%1* calls lightning from the sky to STRIKE YOU!!, SIZZLING your insides!}
+#CONFIG {REPEAT ENTER} on; #NOP very useful for doors script. Turn off if you need to loot clan chest
+#CONFIG {log} plain #NOP you don't want a lot of funny characters in your pk log! 
 
-#SESSION {WOTmud}{game.wotmud.org}{2224}:Lilith;Lilith;sunderlon240;
-
-#CONFIG {REPEAT ENTER} on; #NOP very useful for doors script.
-#CONFIG {log} plain
-
-#CLASS {DS}{read}{DS.tin}; #NOP General stuff adapted for DS. 
+#CLASS {DS}{read}{DS.tin}; #NOP General stuff adapted for DS. No lantern scripts needed here etc. 
 #CLASS {doors}{read}{doors.tin}; #NOP very important in PK! 
 #CLASS {moods}{read}{moods.tin}; #NOP quite useful for both pk and xp. 
 #SPLIT;
