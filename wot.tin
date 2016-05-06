@@ -3,9 +3,8 @@
  #VAR {session[name]} {%0};
  }
 
-#action {*%1* calls lightning from the sky to strike you, sizzling your insides!}#sub {*%1* calls lightning from the sky to strike you, sizzling your insides!}{*%1* calls lightning from the sky to STRIKE YOU!!, SIZZLING your insides!}
 
-#SESSION {WOTmud}{game.wotmud.org}{2224}:Lilith;Lilith;sunderlon240;
+#SESSION {WOTmud}{game.wotmud.org}{2224}:yourname;yourpassword;
 
 #CONFIG {REPEAT ENTER} on; #NOP very useful for doors script.
 #CONFIG {log} plain
