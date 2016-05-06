@@ -1,0 +1,32 @@
+#CLASS {DS} open
+
+
+#config {log} plain
+#config {repeat enter} on
+
+
+#ACTION {A bulky, overfed trolloc whispers to you 'Your balance is the equivalent of %d copper.'}{#math {total}{(%1/20)}#showme Bal: $total}
+
+#ALIAS {Dr}{#VAR Dr %1;#SHOWME Drink: $Dr}
+#ALIAS {co}{#VAR bag %1;#SHOWME Bag: $bag}
+#ALIAS {ff} {#VAR ff %1;#SHOWME Food: $ff}
+#ALiAS {fff} {get $ff $bag;eat $ff}
+#ALIAS {fsw} {get $Dr $bag; fill $Dr well;put $Dr $bag}
+#ALIAS {t}{#VAR target %1;#showme $target}
+#ALIAS {tt}{#VAR second %1;#SHOWME $second}
+#ALIAS {rr}{get $Dr $bag;drink $Dr;drink $Dr;put $Dr $bag}
+#ALIAS {fsc}{get $Dr $bag;fill $Dr corpse;put $dr $bag}
+#ALIAS {j}{kill $second}
+#ALIAS {k}{kill $target}
+
+#NOP  Weapon aliases for warriors and high level hunters 
+
+#ALIAS {ww}{#VAR weapon %1;#showme $weapon}
+#ALIAS {www}{#VAR weaponTwo %1;#showme $weaponTwo} 
+#ALIAS {sw}{rem $weapon; put $weapon $bag;get $weaponTwo $bag;wield $weaponTwo}
+#ALIAS {sww}{rem $weaponTwo; put $weaponTwo $bag;get $weapon $bag;wield $weapon}sa
+
+
+
+
+
