@@ -8,7 +8,7 @@
 
 #NOP modified verison of orginal script at Necromancer's Wiki. 
 ---------------------------------------------------------------------
-#NOP you can load tintin scripts after you log in your alt here. Modify as needed or even delete files below my log in script. 
+#NOP you can load tintin scripts after you log in your alt here. Modify as needed or even delete files below my login script. 
 #CONFIG {REPEAT ENTER} on; #NOP very useful for doors script. Turn it off when getting items from clan chests 
 #CONFIG {log} plain  $NOP if you don't do this, you get lots of unwanted characters in your log.
 
