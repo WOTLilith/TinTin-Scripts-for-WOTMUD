@@ -1,0 +1,5 @@
+#class {travel} OPEN
+
+#ACTION   {^%*%s- [%3] - somewhere{ | far | very far | extremely far }{north of |northeast of |east of |southeast of |south of |southwest of |west of |northwest of |around }here%6$}
+
+#var th %3;#showme $th
