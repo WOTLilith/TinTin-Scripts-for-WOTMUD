@@ -1,0 +1,27 @@
+#CLASS {global} OPEN
+
+#split;
+#config {log} plain
+#ACTION {^A banker whispers to you 'Your balance is the equivalent of %d copper.'$}{#math {total}{(%1/20)};#showme Bal: $total}
+ 
+ #ALIAS {Dr} {#var Dr %1;#showme Drink: $Dr}
+ #ALIAS {co}{#variable bag %0;#showme $bag} 
+ #ALIAS {ff}{#variable ff %0;#showme $ff}
+ #ALIAS {fff}{get $ff $bag;eat $ff}
+ #ALIAS {fsw}{g $Dr $bag;fill $Dr water;put $Dr $bag}
+ #ALIAS {hl}{rem $ll;hide $ll}
+ #ALIAS {hll}{get $ll $bag;hold $ll}
+ #ALIAS {k}{kill $target}
+ #ALIAS {ll}{#variable ll %0;#showme $ll}
+ #ALIAS {pl}{rem $ll;put $ll $bag}
+ #ALIAS {rl}{rem $ll;put $ll $bag}
+ #ALIAS {rr}{get $Dr $bag;drink $Dr;drink $Dr;put $Dr $bag}
+ #ALIAS {t}{#variable target %0;#showme $target}
+ #ALIAS {tt} {#VARIABLE second %0;#showme $second}
+ #ALIAS {j} {kill $second}
+ #VARIABLE {Dr}
+ #VARIABLE {bag}
+ #VARIABLE {ff}
+ #VARIABLE {ll}
+ #VARIABLE {target}
+ #VARIABLE {total}
