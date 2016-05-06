@@ -1,0 +1,59 @@
+#CLASS {weaves} OPEN
+
+#ACTION {^the key to the gates of Tar Valon - [%1]}{#VAR tv %1;#showme $tv}
+#ACTION {^the key to Caemlyn's gates - [%1]}{#var cae %1;#showme $cae}
+#ACTION {^the gatekey to Fal Dara - [%1]}{#VAR fd %1;#showme $fd} 
+#ACTION {^a Cairhien gatekey   - [%1]}{#VAR cai %1;#showme $cai}
+ 
+#ACTION {^a %w     - [%w] - %w  here, carried by a trolloc.$}{#VAR obj &1;#showme $obj;#VAR gethere &2;#VAR tloc &3}
+#ACTION {^a %0     - [%1] - %2  here, carried by a myrddraal.$}{#VAR obj %0;#VAR gethere %1;#VAR mloc %2;#showme $loc} 
+
+
+#ACTION {^a \w     - [\w] - \w  here, carried by a human.$}{#VAR obj %1;#VAR gethere %2; #VAR hloc %3;#showme $loc}
+#NOP Travel Weaves 
+
+#AlIAS {ttv}{emb;channel 'travel' $tv} 
+#ALIAS {tcae}{emb;channel 'travel' $cae}
+#ALIAS {tfd}{emb;channel 'travel' $fd} 
+#AlIAS {tcai}{emb;channel 'travel' $cai} 
+#ALIAS {nl}{nar I sense shadowspawn $loc $here by $obj} 
+#ALIAS {sl}{#var here %1;#showme $here}
+#ALIAS {ct}{channel 'travel' $gethere}
+#ALIAS {sloc}{#showme $loc}
+#ALIAS {sobj}{#showme $obj} 
+#ALIAS {sgh}{#showme $gethere}
+
+#NOP PK Weaves
+ 
+#ALIAS {fb} {emb;channel 'fireball' $target}
+#ALIAS {ii} {emb;channel 'icespike' $target}
+#ALIAS {zt} {emb;channel 'call lightning' $target}
+#ALIAS {fs} {emb;channel 'flame strike' $target}
+#AlIAS {ch} {emb;channel 'chill' $target} 
+#ALIAS {ht} {emb;channel 'hammer of air' $target}
+#ALIAS {ft} {emb;channel 'fear' $target}
+#ALIAS {bl} {emb;channel 'blind' $target}
+
+#NOP Second Target Aliases
+
+#ALIAS {bb} {emb;channel 'fireball' $second}
+#ALIAS {oo} {emb;channel 'icespike} $second}
+#ALIAS {zi} {emb;channel 'call lighting' $second}
+#ALIAS {aa} {emb;channel 'flamestrike' $second}
+#ALIAS {hh} {channel 'hammer of air' $second}
+#ALIAS {fk) {channel 'fear' $second}
+
+#NOP Support Weaves 
+
+#ALIAS {wvd} {emb;channel 'warding vs damage' $target;#showme don't forget to switch targets!} 
+#ALIAS {str} {emb;channel 'strength' $target;#showme Switch targets when done!}
+#ALIAS {CS} {emb;channel 'cure serious" $target: #showme Switch targets when done!}  
+
+
+#VARIABLE tv
+#VARIABLEE cae
+#VARIABLE fd
+#VARIABLE cai
+#VARIABLE loc
+#VARIABLE her
+
