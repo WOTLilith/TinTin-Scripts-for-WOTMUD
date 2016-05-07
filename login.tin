@@ -7,7 +7,7 @@
 #SESSION {WOTmud}{game.wotmud.org}{2224}:yourname;yourpassword;
 
 #CONFIG {REPEAT ENTER} on; #NOP very useful for doors script.
-#CONFIG {log} plain
+#CONFIG {log} plain #NOP you don't want to edit funny chars in your pk logs! Hence the plain arg.
 
 #CLASS {DS}{read}{DS.tin}; #NOP General stuff adapted for DS. 
 #CLASS {doors}{read}{doors.tin}; #NOP very important in PK! 
